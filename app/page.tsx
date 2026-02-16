@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import LearningMenu from '@/components/LearningMenu';
+import VideoSection from '@/components/VideoSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <LearningMenu />
+        <VideoSection />
       </main>
       <Footer />
     </div>

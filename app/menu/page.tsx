@@ -1,24 +1,24 @@
 import SimpleNavbar from '@/components/SimpleNavbar';
-import VideoSection from '@/components/VideoSection';
+import LearningMenu from '@/components/LearningMenu';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-export default function VideoPage() {
+export default function MenuPage() {
   return (
     <div className="min-h-screen bg-white">
       <SimpleNavbar />
       <main className="pt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Link 
-            href="/#learning-menu" 
+            href="/" 
             className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
-            Kembali ke Menu
+            Kembali ke Beranda
           </Link>
         </div>
-        <VideoSection />
+        <LearningMenu />
       </main>
       <Footer />
     </div>

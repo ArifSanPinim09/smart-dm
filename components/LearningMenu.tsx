@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import SectionContainer from './SectionContainer';
-import { BookOpen, Droplet, AlertTriangle, Stethoscope, Pill, Heart, Shield, Video } from 'lucide-react';
+import { BookOpen, Droplet, AlertTriangle, Stethoscope, Pill, Heart, Shield } from 'lucide-react';
 
 const menuItems = [
   {
@@ -60,14 +60,6 @@ const menuItems = [
     icon: Shield,
     color: 'bg-teal-500',
     href: '/materi/pencegahan'
-  },
-  {
-    id: 'video',
-    title: 'Video Edukasi',
-    description: 'Tonton video animasi edukatif tentang diabetes',
-    icon: Video,
-    color: 'bg-indigo-500',
-    href: '/materi/video'
   }
 ];
 

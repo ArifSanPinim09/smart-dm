@@ -13,7 +13,7 @@ export default function Hero() {
               Diabetes Mellitus (DM) adalah penyakit yang ditandai dengan kadar gula darah tinggi akibat gangguan kerja insulin. Penyakit ini tidak hanya menyerang orang dewasa, tetapi juga semakin banyak ditemukan pada remaja. Melalui website SMART DM, kamu bisa belajar mengenali diabetes, faktor risikonya, serta cara pencegahannya agar tetap sehat dan aktif.
             </p>
             <a
-              href="/materi/diabetes-mellitus"
+              href="/menu"
               className="inline-block px-8 py-4 bg-blue-500 text-white font-semibold rounded-xl hover:bg-blue-600 transition-all duration-200 hover:shadow-lg hover:scale-105"
             >
               Mulai Belajar
