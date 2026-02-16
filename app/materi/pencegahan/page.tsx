@@ -1,5 +1,6 @@
 import SimpleNavbar from '@/components/SimpleNavbar';
 import PreventionSection from '@/components/PreventionSection';
+import VideoSection from '@/components/VideoSection';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
@@ -19,6 +20,7 @@ export default function PencegahanPage() {
           </Link>
         </div>
         <PreventionSection />
+        <VideoSection />
       </main>
       <Footer />
     </div>
