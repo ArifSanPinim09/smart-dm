@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-export default function Navbar() {
+export default function SimpleNavbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
