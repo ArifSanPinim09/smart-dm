@@ -1,12 +1,13 @@
 import SectionContainer from './SectionContainer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ImpactSection() {
   const impacts = [
-    { image: 'kesehatan-fisik.jpg', text: 'Kesehatan fisik (mata, ginjal, jantung)' },
-    { image: 'kesehatan-psikologis.jpg', text: 'Kesehatan psikologis (stres, cemas)' },
-    { image: 'aktifitas-sekolah.jpg', text: 'Aktivitas sekolah dan sosial' },
-    { image: 'kualitas-hidup.jpg', text: 'Kualitas hidup di masa depan' },
+    { id: 'kesehatan-fisik', image: 'kesehatan-fisik.jpg', text: 'Kesehatan fisik (mata, ginjal, jantung)' },
+    { id: 'kesehatan-psikologis', image: 'kesehatan-psikologis.jpg', text: 'Kesehatan psikologis (stres, cemas)' },
+    { id: 'aktivitas-sekolah', image: 'aktifitas-sekolah.jpg', text: 'Aktivitas sekolah dan sosial' },
+    { id: 'kualitas-hidup', image: 'kualitas-hidup-masa-depan.jpeg', text: 'Kualitas hidup di masa depan' },
   ];
 
   return (
@@ -36,9 +37,10 @@ export default function ImpactSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {impacts.map((impact, index) => (
-            <div
+            <Link
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              href={`/detail/dampak/${impact.id}`}
+              className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
             >
               <div className="relative w-full aspect-[4/3] bg-white">
                 <Image
@@ -49,12 +51,16 @@ export default function ImpactSection() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="p-6">
-                <p className="text-base text-slate-700 font-semibold text-center leading-relaxed">
+              <div className="p-6 space-y-2">
+                <p className="text-base text-slate-700 font-semibold text-center leading-relaxed group-hover:text-blue-600 transition-colors">
                   {impact.text}
                 </p>
+                <div className="flex items-center justify-center text-blue-600 text-sm font-semibold pt-2">
+                  <span>Pelajari Lebih Lanjut</span>
+                  <span className="group-hover:translate-x-1 transition-transform ml-1">→</span>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

@@ -23,13 +23,13 @@ export default function VideoSection() {
           </p>
         </div>
 
-        {/* YouTube Embed */}
+       {/* YouTube Embed */}
         <div className="max-w-4xl mx-auto">
           <div className="aspect-video rounded-xl overflow-hidden shadow-2xl">
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/zFmJxgdY_9M"
+              src="https://www.youtube.com/embed/Wumhw5WoUmg"
               title="Video Edukasi Diabetes Mellitus - SMART DM"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

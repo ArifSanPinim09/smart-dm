@@ -1,13 +1,14 @@
 import SectionContainer from './SectionContainer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SymptomsSection() {
   const symptoms = [
-    { image: 'mudah-lelah.jpg', text: 'Mudah Lelah' },
-    { image: 'berat-badan-turun.jpg', text: 'Berat badan turun tanpa sebab jelas' },
-    { image: 'pengelihatan-kabur.jpg', text: 'Penglihatan kabur' },
-    { image: 'luka-sulit-sembuh.jpg', text: 'Luka sulit sembuh' },
-    { image: 'kesemutan.jpg', text: 'Kesemutan pada tangan atau kaki' },
+    { id: 'mudah-lelah', image: 'mudah-lelah.jpg', text: 'Mudah Lelah' },
+    { id: 'berat-badan-turun', image: 'berat-badan-turun.jpg', text: 'Berat badan turun tanpa sebab jelas' },
+    { id: 'penglihatan-kabur', image: 'pengelihatan-kabur.jpg', text: 'Penglihatan kabur' },
+    { id: 'luka-sulit-sembuh', image: 'luka-sulit-sembuh.jpg', text: 'Luka sulit sembuh' },
+    { id: 'kesemutan', image: 'kesemutan.jpg', text: 'Kesemutan pada tangan atau kaki' },
   ];
 
   return (
@@ -75,9 +76,10 @@ export default function SymptomsSection() {
           <h3 className="text-2xl md:text-3xl font-bold text-slate-900 text-center">Gejala Lainnya</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {symptoms.map((symptom, index) => (
-              <div
+              <Link
                 key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                href={`/detail/gejala/${symptom.id}`}
+                className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
               >
                 <div className="relative w-full aspect-square bg-white">
                   <Image
@@ -88,12 +90,16 @@ export default function SymptomsSection() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
-                <div className="p-6">
-                  <p className="text-base text-slate-700 font-semibold text-center leading-relaxed">
+                <div className="p-6 space-y-2">
+                  <p className="text-base text-slate-700 font-semibold text-center leading-relaxed group-hover:text-blue-600 transition-colors">
                     {symptom.text}
                   </p>
+                  <div className="flex items-center justify-center text-blue-600 text-sm font-semibold pt-2">
+                    <span>Pelajari Lebih Lanjut</span>
+                    <span className="group-hover:translate-x-1 transition-transform ml-1">→</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
