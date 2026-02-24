@@ -9,7 +9,8 @@ export default function KurangPengetahuanPage() {
         <div className="space-y-4">
           <div className="text-6xl text-center mb-4">📚</div>
           <p className="text-lg text-slate-700 leading-relaxed">
-            Kurangnya informasi mengenai pentingnya pola makan sehat, aktivitas fisik, dan pemeriksaan kesehatan dapat membuat seseorang tidak menyadari risiko yang dimiliki. Tanpa pengetahuan yang cukup, kebiasaan tidak sehat bisa terus dilakukan tanpa disadari dampaknya.
+            Kurangnya pengetahuan tentang Diabetes Mellitus dapat membuat seseorang tidak menyadari faktor risiko dan dampaknya.
+            Solusinya, tingkatkan pemahaman dengan mencari informasi dari sumber terpercaya, mengikuti edukasi kesehatan, membaca materi tentang DM, serta aktif bertanya kepada tenaga kesehatan. Dengan pengetahuan yang cukup, kita dapat mengambil langkah pencegahan yang tepat sejak dini.
           </p>
         </div>
       }

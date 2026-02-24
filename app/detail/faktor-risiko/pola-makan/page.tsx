@@ -9,7 +9,7 @@ export default function PolaMakanPage() {
         <div className="space-y-4">
           <div className="text-6xl text-center mb-4">🍟</div>
           <p className="text-lg text-slate-700 leading-relaxed">
-            Sering mengonsumsi minuman manis, makanan tinggi gula, lemak jenuh, dan makanan cepat saji dapat menyebabkan kenaikan berat badan dan resistensi insulin. Jika kebiasaan ini berlangsung lama, tubuh akan kesulitan mengontrol kadar gula darah sehingga risiko diabetes meningkat.
+            Sering mengonsumsi minuman manis dan makanan tinggi gula, lemak jenuh, serta makanan cepat saji seperti teh manis kemasan, minuman boba, soda, kopi susu gula aren, donat, cokelat, permen, es krim, gorengan, ayam crispy, kentang goreng, burger, pizza, dan mie instan dapat menyebabkan kenaikan berat badan dan resistensi insulin. Jika kebiasaan ini berlangsung dalam jangka waktu lama, tubuh akan kesulitan mengontrol kadar gula darah sehingga risiko terjadinya diabetes meningkat.
           </p>
         </div>
       }

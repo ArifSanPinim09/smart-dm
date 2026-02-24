@@ -20,7 +20,7 @@ export default function RiskFactorsSection() {
           </h2>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        {/* <div className="max-w-5xl mx-auto">
           <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl bg-white">
             <Image
               src="/images/Siapa yang Berisiko Terkena Diabetes.jpg"
@@ -30,7 +30,7 @@ export default function RiskFactorsSection() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1400px"
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {risks.map((risk, index) => (
