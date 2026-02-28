@@ -134,6 +134,32 @@ export default function ObesitasPage() {
               </table>
             </div>
           </div>
+
+          {/* Video Panduan */}
+          <div className="bg-orange-50 border-2 border-orange-300 rounded-xl p-6 space-y-4">
+            <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
+              <span>📹</span> Video Panduan
+            </h3>
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-3">
+                <h4 className="text-lg font-bold text-white">⚖️ Cara Mengukur Berat Badan & Lingkar Perut</h4>
+              </div>
+              <div className="p-4">
+                <div className="aspect-video rounded-lg overflow-hidden">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/KrbHIhMSCBU"
+                    title="Cara Mengukur Berat Badan & Lingkar Perut"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       }
       tip="Menjaga berat badan ideal membantu tubuh menggunakan insulin dengan lebih efektif."

@@ -1,5 +1,6 @@
 import SectionContainer from './SectionContainer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function TreatmentSection() {
   const oralMeds = [
@@ -42,15 +43,27 @@ export default function TreatmentSection() {
             Insulin membantu gula darah masuk ke dalam sel agar bisa digunakan sebagai energi. Digunakan terutama pada DM Tipe 1, dan pada DM Tipe 2 jika gula darah belum terkontrol.
           </p>
           <div className="max-w-3xl mx-auto">
-            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-white">
+            <Link
+              href="/detail/penanganan/insulin-video"
+              className="block relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+            >
               <Image
                 src="/images/insulin.jpg"
-                alt="Insulin"
+                alt="Insulin - Klik untuk melihat video panduan"
                 fill
-                className="object-contain"
+                className="object-contain group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 900px"
               />
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <div className="flex items-center justify-center gap-2 text-lg font-semibold">
+                    <span className="text-2xl">📹</span>
+                    <span>Lihat Video Panduan Penggunaan Insulin</span>
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 max-w-3xl mx-auto">
             <h4 className="font-bold text-slate-900 mb-6 text-xl">
