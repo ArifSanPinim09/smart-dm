@@ -54,12 +54,13 @@ export default function TreatmentSection() {
                 className="object-contain group-hover:scale-105 transition-transform duration-300"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 900px"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <div className="flex items-center justify-center gap-2 text-lg font-semibold">
-                    <span className="text-2xl">📹</span>
-                    <span>Lihat Video Panduan Penggunaan Insulin</span>
-                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+              {/* Overlay yang selalu terlihat di semua ukuran layar */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent">
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-white">
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-2 text-base md:text-lg font-semibold">
+                    <span className="text-3xl md:text-2xl">📹</span>
+                    <span className="text-center leading-tight">Lihat Video Panduan Penggunaan Insulin</span>
+                    <span className="hidden md:inline">→</span>
                   </div>
                 </div>
               </div>
