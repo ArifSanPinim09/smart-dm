@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import SectionContainer from './SectionContainer';
-import { BookOpen, Droplet, AlertTriangle, Stethoscope, Pill, Heart, Shield } from 'lucide-react';
+import { BookOpen, Droplet, AlertTriangle, Stethoscope, Pill, Heart, Shield, Info, FileText } from 'lucide-react';
 
 const menuItems = [
   {
@@ -60,6 +60,22 @@ const menuItems = [
     icon: Shield,
     color: 'bg-teal-500',
     href: '/materi/pencegahan'
+  },
+  {
+    id: 'about',
+    title: 'Tentang Web',
+    description: 'Informasi tentang website SMART DM dan tim pembuat',
+    icon: Info,
+    color: 'bg-indigo-500',
+    href: '/tentang'
+  },
+  {
+    id: 'references',
+    title: 'Referensi',
+    description: 'Daftar pustaka dan sumber informasi',
+    icon: FileText,
+    color: 'bg-slate-500',
+    href: '/referensi'
   }
 ];
 
@@ -75,7 +91,7 @@ export default function LearningMenu() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {menuItems.map((item) => {
           const Icon = item.icon;
           return (
